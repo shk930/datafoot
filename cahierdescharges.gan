@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-03-16" view-index="0" gantt-divider-location="233" resource-divider-location="300" version="3.2.3230" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="134" order="0"/>
+        <field id="tpd4" name="Date de début" width="49" order="1"/>
+        <field id="tpd5" name="Date de fin" width="49" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="taskDates"/>
+        <option id="taskLabelLeft" value="resources"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#ccffcc #cccccc #333333 #ffff33 #009999 #ffcccc #00ffcc #00cc00 #3300ff #ff33ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="199" order="0"/>
+        <field id="1" name="Rôle par défaut" width="82" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="Aucun">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2024" month="2" date="6" type="WORKING_DAY" color="#ffff33">
+            <![CDATA[Objectif 2]]>
+        </date>
+        <date year="2024" month="3" date="5" type="WORKING_DAY" color="#cccccc">
+            <![CDATA[Objectif 3]]>
+        </date>
+        <date year="2024" month="1" date="23" type="WORKING_DAY" color="#ccffcc">
+            <![CDATA[Objectif 1]]>
+        </date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Objectif 1" color="#3300ff" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" project="true" start="2024-01-23" duration="10" complete="2" thirdDate="2024-01-30" thirdDate-constraint="0" priority="4" expand="true">
+            <task id="1" name="Installer et configurer une machine virtuelle Linux (ubuntu)." color="#8cb6ce" meeting="false" start="2024-01-23" duration="1" complete="0" thirdDate="2024-01-30" thirdDate-constraint="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" name="Installer une base de données sur la machine virtuelle pour stocker efficacement les données des scores, des équipes, et des utilisateurs( à l'aide de MariaDB)." color="#8cb6ce" meeting="false" start="2024-01-24" duration="6" complete="5" thirdDate="2024-01-30" thirdDate-constraint="0" expand="true"/>
+            <task id="3" name="Configurer un service DHCP pour attribuer dynamiquement les adresses IP aux périphériques connectés au réseau, simplifiant ainsi la gestion des adresses." color="#8cb6ce" meeting="false" start="2024-01-23" duration="9" complete="3" thirdDate="2024-01-30" thirdDate-constraint="0" expand="true"/>
+            <task id="4" name="Concevoir et mettre en place une architecture réseau robuste et évolutive pour le site DataFoot(familiarisation et utilisation d'outils comme pack tracer pour avoir une vue d'ensemble théorique)." color="#8cb6ce" meeting="false" start="2024-01-23" duration="10" complete="0" thirdDate="2024-01-11" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="5" name="Objectif 2" color="#ff33ff" meeting="false" start="2024-02-07" duration="19" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" priority="4" expand="true">
+            <task id="6" name="Créer un script shell automatisant des tâches d'administration courantes sur la machine virtuelle, facilitant la maintenance et les mises à jour." color="#ccccff" meeting="false" start="2024-02-07" duration="11" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" expand="true"/>
+            <task id="7" name="Developpement du site web avec wordpress et adaptation d'API sur celui-ci." color="#ccccff" meeting="false" start="2024-02-08" duration="15" complete="0" thirdDate="2024-01-29" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="hébergement du site web." color="#ccccff" meeting="false" start="2024-02-29" duration="3" complete="0" thirdDate="2024-02-07" thirdDate-constraint="0" expand="true"/>
+            <task id="9" name="Configurer des pare-feu et des règles de sécurité pour protéger l'architecture réseau contre les attaques potentielles." color="#ccccff" meeting="false" start="2024-02-13" duration="11" complete="3" thirdDate="2024-02-07" thirdDate-constraint="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Implémentation d'une Authentification Individualisée et Gestion des Utilisateurs" color="#ccccff" meeting="false" start="2024-02-28" duration="3" complete="0" thirdDate="2024-01-15" thirdDate-constraint="0" expand="true"/>
+            <task id="12" name="Mettre en place un système de messagerie facilitant l'échange avec les utilisateurs et la sécuriser." color="#ccccff" meeting="false" start="2024-02-08" duration="17" complete="0" thirdDate="2024-01-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="14" name="Objectif 3" color="#00ffcc" meeting="false" start="2024-03-06" duration="10" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" priority="4" expand="true">
+            <task id="15" name="Mettre en œuvre la journalisation des accès à l'application DataFoot pour suivre les activités des utilisateurs et garantir la sécurité." color="#00ff00" meeting="false" start="2024-03-06" duration="8" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="Élaborer un processus de génération de statistiques à partir des journaux d'accès, offrant des insights sur l'utilisation de la plateforme." color="#33ff33" meeting="false" start="2024-03-07" duration="7" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true"/>
+            <task id="18" name="Détection des interruptions de service grâce à des outils de surveillance." color="#00ff00" meeting="false" start="2024-03-11" duration="6" complete="0" thirdDate="2023-12-25" thirdDate-constraint="0" expand="true"/>
+            <task id="17" name="Déploiement du projet avec tests et évaluation du service." color="#33ff33" meeting="false" start="2024-03-06" duration="8" complete="0" thirdDate="2024-01-08" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Correctif des problèmes." color="#33ff33" meeting="false" start="2024-03-18" duration="2" complete="0" thirdDate="2023-12-25" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Abdelhafid" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Shakethan" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="17" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Administration réseau "/>
+        <role id="2" name="Développement"/>
+        <role id="3" name="Cybersécurité"/>
+    </roles>
+</project>
