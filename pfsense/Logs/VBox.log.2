@@ -1,0 +1,47 @@
+00:00:05.235451 VirtualBox VM 7.0.14 r161095 win.amd64 (Jan 15 2024 14:59:30) release log
+00:00:05.235454 Log opened 2024-03-19T19:14:01.768212600Z
+00:00:05.235455 Build Type: release
+00:00:05.235457 OS Product: Windows 10
+00:00:05.235458 OS Release: 10.0.19045
+00:00:05.235458 OS Service Pack: 
+00:00:05.295981 DMI Product Name: H610M H V2 DDR4
+00:00:05.298122 DMI Product Version: -CF
+00:00:05.298131 Firmware type: UEFI
+00:00:05.298438 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:05.298451 Host RAM: 16222MB (15.8GB) total, 8854MB (8.6GB) available
+00:00:05.298453 Executable: D:\VirtualBox\VirtualBoxVM.exe
+00:00:05.298453 Process ID: 16344
+00:00:05.298454 Package type: WINDOWS_64BITS_GENERIC
+00:00:05.299053 Installed Extension Packs:
+00:00:05.305130   None installed!
+00:00:05.305526 Console: Machine state changed to 'Starting'
+00:00:05.305792 Qt version: 5.15.2
+00:00:05.311144 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:05.367005 SUP: seg #0: R   0x00000000 LB 0x00001000
+00:00:05.367024 SUP: seg #1: R X 0x00001000 LB 0x00179000
+00:00:05.367028 SUP: seg #2: R   0x0017a000 LB 0x00051000
+00:00:05.367032 SUP: seg #3: RW  0x001cb000 LB 0x00013000
+00:00:05.367036 SUP: seg #4: R   0x001de000 LB 0x00011000
+00:00:05.367039 SUP: seg #5: RW  0x001ef000 LB 0x00004000
+00:00:05.367043 SUP: seg #6: R   0x001f3000 LB 0x00010000
+00:00:05.367046 SUP: seg #7: R X 0x00203000 LB 0x00002000
+00:00:05.367050 SUP: seg #8: R   0x00205000 LB 0x00007000
+00:00:05.369178 SUP: Loaded VMMR0.r0 (D:\VirtualBox/VMMR0.r0) at 0xXXXXXXXXXXXXXXXX - ModuleInit at XXXXXXXXXXXXXXXX and ModuleTerm at XXXXXXXXXXXXXXXX using the native ring-0 loader
+00:00:05.369199 SUP: VMMR0EntryEx located at XXXXXXXXXXXXXXXX and VMMR0EntryFast at XXXXXXXXXXXXXXXX
+00:00:05.369202 SUP: windbg> .reload /f D:\VirtualBox/VMMR0.r0=0xXXXXXXXXXXXXXXXX
+00:00:05.371804 Guest OS type: 'FreeBSD_64'
+00:00:05.372037 fHMForced=true - No raw-mode support in this build!
+00:00:05.373560 File system of 'F:\fichier_datafoot\pfsense\pfsense.vdi' is ntfs
+00:00:05.387200 AssertLogRel D:\tinderboxa\win-7.0\src\VBox\Main\src-client\ConsoleImpl2.cpp(6003) int __cdecl Console::i_configNetwork(const char *,unsigned int,unsigned int,struct INetworkAdapter *,struct CFGMNODE *,struct CFGMNODE *,struct CFGMNODE *,bool,bool,struct UVM *,const struct VMMR3VTABLE *): <NULL>
+00:00:05.387218 NetworkAttachmentType_Bridged: FindByName failed, hrc=E_INVALIDARG (0x80070057)
+00:00:05.387248 VMSetError: D:\tinderboxa\win-7.0\src\VBox\Main\src-client\ConsoleImpl2.cpp(6004) int __cdecl Console::i_configNetwork(const char *,unsigned int,unsigned int,struct INetworkAdapter *,struct CFGMNODE *,struct CFGMNODE *,struct CFGMNODE *,bool,bool,struct UVM *,const struct VMMR3VTABLE *); rc=VERR_INTERNAL_ERROR
+00:00:05.387261 VMSetError: Nonexistent host networking interface, name 'Intel(R) Ethernet Connection (11) I219-LM'
+00:00:05.387427 Constructor failed with rc=VERR_INTERNAL_ERROR pfnCFGMConstructor=00007ffcf18ad730
+00:00:05.388035 ERROR [COM]: aRC=E_FAIL (0x80004005) aIID={6ac83d89-6ee7-4e33-8ae6-b257b2e81be8} aComponent={ConsoleWrap} aText={Nonexistent host networking interface, name 'Intel(R) Ethernet Connection (11) I219-LM' (VERR_INTERNAL_ERROR)}, preserve=false aResultDetail=-225
+00:00:05.388242 Console: Machine state changed to 'PoweredOff'
+00:00:05.427049 Power up failed (vrc=VERR_INTERNAL_ERROR, hrc=E_FAIL (0X80004005))
+00:00:05.436547 GUI: UIMachineViewNormal::resendSizeHint: Restoring guest size-hint for screen 0 to 800x600
+00:00:05.436577 ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={4680b2de-8690-11e9-b83d-5719e53cf1de} aComponent={DisplayWrap} aText={The console is not powered up (Display::setVideoModeHint)}, preserve=false aResultDetail=0
+00:00:05.436687 GUI: Aborting startup due to power up progress issue detected...
+00:00:05.456347 GUI: UICommon: Handling aboutToQuit request..
+00:00:05.981603 GUI: UICommon: aboutToQuit request handled!
